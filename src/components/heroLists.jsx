@@ -11,7 +11,7 @@ import {
 import HeroStatsModal from "./heroStatsModal";
 import api from "../api";
 
-function HeroTable() {
+function HeroLists() {
   const [heroes, setHeroes] = useState([]);
 
   async function getAllHeroes() {
@@ -49,7 +49,7 @@ function HeroTable() {
               <Heading>{hero.name}</Heading>
             </CardBody>
             <CardFooter>
-              <HeroStatsModal heroName={hero.name} />
+              <HeroStatsModal heroName={hero.name} heroId={hero.heroid}/>
             </CardFooter>
           </Card>
         );
@@ -58,4 +58,4 @@ function HeroTable() {
   );
 }
 
-export default HeroTable;
+export default HeroLists;

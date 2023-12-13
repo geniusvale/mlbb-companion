@@ -1,9 +1,9 @@
-import HeroTable from "./components/heroLists";
+import HeroLists from "./components/heroLists";
 
 function App() {
   return (
     <>
-      <HeroTable></HeroTable>
+      <HeroLists/>
     </>
   );
 }
