@@ -1,14 +1,9 @@
-import { VStack } from "@chakra-ui/react";
-import Navbar from "./components/navbar";
-import HeroTable from "./components/heroTable";
+import HeroTable from "./components/heroLists";
 
 function App() {
   return (
     <>
-      <VStack>
-        <Navbar></Navbar>
-        <HeroTable></HeroTable>
-      </VStack>
+      <HeroTable></HeroTable>
     </>
   );
 }
