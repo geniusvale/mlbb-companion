@@ -1,9 +1,12 @@
+import { Container } from "@chakra-ui/react";
 import HeroLists from "./components/heroLists";
 
 function App() {
   return (
     <>
-      <HeroLists/>
+      <Container maxWidth='1280px'>
+        <HeroLists />
+      </Container>
     </>
   );
 }

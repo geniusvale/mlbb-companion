@@ -19,6 +19,7 @@ import {
   Flex,
   Spacer,
   Tooltip,
+  Progress
 } from "@chakra-ui/react";
 import LoremIpsum from "react-lorem-ipsum";
 import api from "../api";
@@ -67,6 +68,26 @@ function HeroStatsModal({ heroName, heroId }) {
 
             <Text marginBottom="32px">{heroData.type}</Text>
 
+            <Heading as="h5" size="md" marginBottom="8px">
+              Stats
+            </Heading>
+            <span>
+              Magic
+              <Progress hasStripe value={heroData.mag} marginBottom="16px"/>
+            </span>
+            <span>
+              Physical Attack
+              <Progress hasStripe value={heroData.phy} marginBottom="16px"/>
+            </span>
+            <span>
+              Crowd Control
+              <Progress hasStripe value={heroData.alive} marginBottom="16px"/>
+            </span>
+            <span>
+              Difficulty
+              <Progress hasStripe value={heroData.diff} marginBottom="16px"/>
+            </span>
+            
             <Heading as="h5" size="md" marginBottom="32px">
               Skills
             </Heading>
